@@ -20,8 +20,11 @@ passport.use(new LocalStrategy(
         if (!user) { 
           return done(null, false, { message: 'Unknown user ' + username }); 
         }
-        if (!user[0].validatePassword(password)) { return done(null, false, { message: 'Invalid password' }); }
-        return done(null, user[0]);
+        try {
+          if (!user[0].validatePassword(password)) { return done(null, false, { message: 'Invalid password' }); }
+        }
+        catch(e) {}
+        return done(null, false);
       })
     });
   }
