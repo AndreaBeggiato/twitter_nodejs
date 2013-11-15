@@ -1,8 +1,7 @@
 #Introduzione
 Il seguente progetto si propone di far emergere le peculiarità della piattaforma per lo sviluppo di applicazioni web Node.js. Di seguito saranno trattate tutte le componenti utilizzate per sviluppare l'applicazione di esempio, ovvero un clone di Twitter.
 
-*Purtroppo lo stack utilizzato è ancora in fase beta e non è pronto per un ambiente di produzione. Per questo motivo nel server di produizione verrà utilizzato un db che sarà salvato su di un file (tipo SQLite). Purtroppo l'hosting sarà Heroku, che con il piano gratuito, elimina i file (e conseguentemente il db) ogni volta che la macchina si trova in idle per troppo tempo. 
-Conviene quindi scaricarsi il repository, e lanciare i seguenti comandi*
+*Purtroppo non sono presenti soluzioni gratuite di hosting per lo stack utilizzato, quindi l'unico modo per provare l'applicazione di esempio è in locale. Sarà sufficiente installare [node.js](http://nodejs.org/), clonare il repository e lanciare i seguenti comandi:
 
 ```
 #!bash
