@@ -1,0 +1,1 @@
+<a href="#/hashtags/<%= name %>/tweets">#<%= name %></a>

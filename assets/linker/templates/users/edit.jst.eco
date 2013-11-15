@@ -1,0 +1,23 @@
+
+      <form role="form" class="form-horizontal">
+        <fieldset>
+          <legend>Modifica profilo</legend>
+          <input type="hidden" id="user_id" value="<%= id %>" data-field="id">
+          <div class="form-group">
+            <label for="display_name" class="col-lg-3 control-label">Display name:</label>
+            <div class="col-lg-9">
+              <input id="display_name" type="text" class="display_name form-control" placeholder="Scrivi il tuo display name" value="<%= display_name %>" data-field="display_name"/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="bio" class="col-lg-3 control-label">Bio:</label>
+            <div class="col-lg-9">
+              <textarea id ="bio" class="bio form-control" rows="4" placeholder="Scrivi la tua bio" value="<%= bio %>" data-field="bio"/>
+            </div>
+          </div>
+          <div class="form-group">
+            <input class="btn btn btn-primary" type="submit" value="Salva"/>
+          </div>
+        </fieldset>
+  
+      </form>

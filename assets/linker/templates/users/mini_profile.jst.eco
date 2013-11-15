@@ -1,0 +1,6 @@
+<div>
+  <a href="#/users/<%= id %>/tweets" class="profile-link">
+    <strong><%= view_name() %></strong>
+    <span class="text-small text-muted">@<%= username %></span>
+  </a>
+</div>

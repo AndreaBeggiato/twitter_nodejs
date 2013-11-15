@@ -1,0 +1,29 @@
+
+<div class="row">
+  <div class="col-lg-12 tweet-container">
+    <div class="row">
+      <div class="col-lg-2 user_image">
+        <img class="profile-image img-rounded" src="/images/thumb_missing_avatar.png"/>
+      </div>
+ 
+      <div class="col-lg-7">
+        <div class="row">
+          <div class="col-lg-12 user">
+          </div>
+        </div>
+    
+        <div class="row">
+          <div class="col-lg-12">
+            <%= formatted_content() %>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-3 text-small text-muted">
+        <div class="pull-right">
+          <%= Date.create(createdAt).relative() %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+
+<div class="row">
+  <div class="col-lg-3">
+    <img class="profile-image img-rounded" src="<%= thumb_image_url() %>"/>
+  </div>
+  <div class="col-lg-9">
+    <div class="row">
+      <div class="col-lg-12">
+        <strong class="display-name"><%= view_name() %></strong>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <a href="#/users/<%= id %>/tweets"><span class="text-small text-muted">Visualizza il mio profilo</span></a/>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row summary-profile">
+  <div class="col-lg-4 summary-element">
+    <div class="summary-value text-center"><%= tweet_count %></div>
+    <div class="summary-description text-center text-muted">TWEETS</div>
+  </div>
+  <div class="col-lg-4 summary-element">
+    <div class="summary-value text-center"><%= follower_count %></div>
+    <div class="summary-description text-center text-muted">FOLLOWERS</div>
+  </div>
+  <div class="col-lg-4 summary-element">
+    <div class="summary-value text-center"><%= following_count %></div>
+    <div class="summary-description text-center text-muted">FOLLOWINGS</div>
+  </div>
+</div>

@@ -1,0 +1,60 @@
+<div class="row">
+  <div class="col-lg-12">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="panel panel-white">
+            <div class="row">
+                <div class="col-lg-12">
+                  <div class="panel-show-user">
+                    <div class="text-center">
+                      <img src="<%= small_image_url() %>" class="avatar-image img-rounded"/>
+                    </div>
+  
+                    <h3 class="text-center">
+                      <%= view_name() %>
+                    </h3>
+  
+                    <h4 class="text-center">
+                      @<%= username %>
+                    </h4>
+  
+                  </div>
+                </div>
+            </div>
+            
+            <div class="row summary-show-profile">
+      
+              <div class="col-lg-3">
+                <div class="summary-value text-center"><%= tweet_count %></div>
+                <div class="summary-description text-center text-muted">TWEETS</div>
+              </div>
+      
+              <div class="col-lg-3">
+                <div class="summary-value text-center"><%= follower_count %></div>
+                <div class="summary-description text-center text-muted">FOLLOWERS</div>
+              </div>
+      
+              <div class="col-lg-3">
+                <div class="summary-value text-center"><%= following_count %></div>
+                <div class="summary-description text-center text-muted">FOLLOWINGS</div>
+              </div>
+      
+              <div class="col-lg-3">
+                <div class="pull-right">
+                  <% if (isMe() == false) {%>
+                    <% if (isFollowing()) { %>
+                      <a href="#" class="btn btn-danger" id="unfollow-user">Smetti di seguire</a>
+                    <% } else { %>
+                      <a href="#" class="btn btn-primary" id="follow-user">Segui</a>
+                    <% }%>
+                  <% } %>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    
+  </div>
+</div>
