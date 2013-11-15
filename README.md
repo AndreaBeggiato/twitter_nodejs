@@ -42,7 +42,6 @@ var app = http.createServer(function(request, response) {
   response.end("Hello world!\n");
 });
 
-// Start that server, baby
 app.listen(1337, "localhost");
 console.log("Server running at http://localhost:1337/");
 ```
